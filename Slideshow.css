@@ -1,0 +1,79 @@
+.slideshow-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.slideshow-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 40px;
+  
+  background: linear-gradient(90deg, #0d0d0d, #333333, #4f4f4f, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+
+.slideshow-heading:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #2196f3;
+  margin: 15px auto 0;
+}
+
+
+/* Slideshow Container */
+.slideshow {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Slideshow Track */
+.slideshow-track {
+  display: flex;
+  animation: scroll 20s linear infinite; 
+  gap: 80px;
+}
+
+/* Slideshow Items */
+.slideshow-item {
+  flex: 0 0 auto; /* Prevent shrinking */
+  width: 180px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+/* Slideshow Image */
+.slideshow-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+
+    
+}
+
+/* Animation Keyframes */
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+  }
